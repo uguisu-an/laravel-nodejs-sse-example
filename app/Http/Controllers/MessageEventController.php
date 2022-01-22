@@ -15,13 +15,13 @@ class MessageEventController extends Controller
             ob_flush();
             flush();
 
-            for ($i = 0; $i < 100; $i++) {
-                $text = Str::random(3);
-                echo "data: {$text}\n\n";
+            for ($i = 0; $i < 10; $i++) {
+                $data = Str::random(3);
+                echo "data: {$data}\n\n";
 
                 ob_flush();
                 flush();
-                usleep(100000);
+                sleep(1);
             }
         };
         $headers = [
