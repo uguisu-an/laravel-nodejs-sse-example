@@ -11,5 +11,3 @@ get("http://localhost/sse/messages", (response) => {
         console.info("close");
     });
 });
-
-// TODO: Reconnect
